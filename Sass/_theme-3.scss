@@ -1,0 +1,73 @@
+body {
+    .theme-three {
+        background: $main-background-3;
+        %white-text {
+            color: $white-text-3;
+        }
+
+        %yellow-text {
+            color: $yellow-text;
+        }
+
+        %dark-text {
+            color: $dark-text-3;
+        }
+
+        .calc-top {
+            @extend %yellow-text;
+            .radio-container {
+                background-color: $toggle-keypad-background-3;
+                .radio-radio::after {
+                    background: $equals-switch-background-3;
+                }
+            }
+            // Scientific switch background color
+            input[type=checkbox]:checked + .switch-scientific {
+                background: $equals-switch-background-3;
+            }
+        }
+
+        .buttons-panel-container {
+            background-color: $toggle-keypad-background-3;
+        }
+
+        .display-panel {
+            background: $screen-background-3;
+            @extend %yellow-text;
+        }
+
+        .ordinary {
+            background-color: $key-background-3;
+            border: 1px $key-background-3 solid;
+            box-shadow: 0 5px $key-shadow-3;
+            @extend %yellow-text;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .equals {
+            background-color: $equals-switch-background-3;
+            border: 1px $equals-switch-background-3 solid;
+            box-shadow: 0 5px $equals-shadow-3;
+            @extend %dark-text;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .reset-delete {
+            background-color: $delete-reset-background-3;
+            border: 1px $delete-reset-background-3 solid;
+            box-shadow: 0 5px $delete-reset-shadow-3;
+            @extend %white-text;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .attribution {
+            @extend %yellow-text;
+        }
+    }
+}

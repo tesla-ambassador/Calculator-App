@@ -1,0 +1,10 @@
+.buttons-panel-scientific {
+    @include btn-panel();
+    .scientific {
+        display: block;
+    }
+    .equals {
+        grid-column: span 4;
+        padding: $base-padding * 2;
+    }
+}

@@ -1,0 +1,65 @@
+$breakpoints: (
+    "xxl": 1242px,
+    "xl": 902px,
+    "lg": 650px,
+    "md": 550px,
+    "sm": 480px,
+    "xs": 350px,
+);
+
+@mixin xxl {
+    @media (max-width: map-get($breakpoints, xxl)) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: map-get($breakpoints, xs)) {
+        @content;
+    }
+}
+
+.responsive {
+    @include xxl {
+        width: $calc-width * 1.5;
+    }
+    @include xl {
+        width: $calc-width * 1.8;
+    }
+    @include lg {
+        width: $calc-width * 2;
+    }
+    @include md {
+        width: $calc-width * 2.3;
+    }
+    @include sm {
+        width: $calc-width * 3;
+    }
+    @include xs {
+        width: $calc-width * 3.3;
+    }
+}

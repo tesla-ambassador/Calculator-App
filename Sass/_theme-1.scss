@@ -1,0 +1,69 @@
+body {
+    .theme-one {
+        background: $main-background-1;
+        %white-text {
+            color: $white-text-3;
+        }
+
+        %dark-text {
+            color: $dark-text-3;
+        }
+
+        .calc-top {
+            @extend %white-text;
+            .radio-container {
+                background-color: $toggle-keypad-background-1;
+                .radio-radio::after {
+                    background: $equals-switch-background-1;
+                }
+            }
+            // Scientific switch background color
+            input[type=checkbox]:checked + .switch-scientific {
+                background: $equals-switch-background-1;
+            }
+        }
+
+        .buttons-panel-container {
+            background-color: $toggle-keypad-background-1;
+        }
+
+        .display-panel {
+            background: $screen-background-1;
+            @extend %white-text;
+        }
+
+        .ordinary {
+            background-color: $key-background-1;
+            border: 1px $key-background-1 solid;
+            box-shadow: 0 5px $key-shadow-1;
+            @extend %dark-text;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .equals {
+            background-color: $equals-switch-background-1;
+            border: 1px $equals-switch-background-1 solid;
+            box-shadow: 0 5px $equals-shadow-1;
+            @extend %white-text;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .reset-delete {
+            background-color: $delete-reset-background-1;
+            border: 1px $delete-reset-background-1 solid;
+            box-shadow: 0 5px $delete-reset-shadow-1;
+            @extend %white-text;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .attribution {
+            @extend %white-text;
+        }
+    }
+}

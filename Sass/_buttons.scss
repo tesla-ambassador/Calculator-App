@@ -1,0 +1,13 @@
+button {
+    padding: $base-padding;
+    border-radius: $base-border-radius;
+    font-size: 16px;
+}
+
+.ordinary {
+    font-size: $numbers;
+}
+
+.scientific {
+    padding: $base-padding * 2;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./Script file/script.js" defer></script>
+    <title>Calculator app | Frontend Mentor</title>
+</head>
+
+<body>
+    <main id="main-section" class="theme-one">
+        <section class="container">
+            <div class="calculator-container responsive">
+                <div class="calc-top">
+                    <h1>Calc</h1>
+                    <label for="scientific-mode" class="switch-container">
+                        <input id="scientific-mode" type="checkbox" class="checkbox">
+                        Sci
+                        <div class="switch-scientific"></div>
+                    </label>
+                    <div class="theme-switch-container">
+                        <div class="number-lables">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                        </div>
+                        <div class="radio-container">
+                            <label for="radio-1" class="radio-label">
+                                <input type="radio" class="radio-input" id="radio-1" name="radio-input-1" checked>
+                                <div class="radio-radio"></div>
+                            </label>
+                            <label for="radio-2" class="radio-label">
+                                <input type="radio" class="radio-input" id="radio-2" name="radio-input-1">
+                                <div class="radio-radio"></div>
+                            </label>
+                            <label for="radio-3" class="radio-label">
+                                <input type="radio" class="radio-input" id="radio-3" name="radio-input-1">
+                                <div class="radio-radio"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-panel">
+                    <div prev-input class="display-prev"></div>
+                    <div current-input class="display-current"></div>
+                </div>
+                <div class="buttons-panel-container">
+                    <div id="button-pad" class="buttons-panel">
+                        <button numbers class="ordinary">7</button>
+                        <button numbers class="ordinary">8</button>
+                        <button numbers class="ordinary">9</button>
+                        <button delete class="reset-delete">DEL</button>
+                        <button numbers class="ordinary">4</button>
+                        <button numbers class="ordinary">5</button>
+                        <button numbers class="ordinary">6</button>
+                        <button operation class="ordinary">+</button>
+                        <button numbers class="ordinary">1</button>
+                        <button numbers class="ordinary">2</button>
+                        <button numbers class="ordinary">3</button>
+                        <button operation class="ordinary">-</button>
+                        <button numbers class="ordinary decimal">.</button>
+                        <button numbers class="ordinary">0</button>
+                        <button operation class="ordinary">/</button>
+                        <button operation class="ordinary">x</button>
+                        <button sci class="reset-delete scientific">sin</button>
+                        <button sci class="reset-delete scientific">cos</button>
+                        <button sci class="reset-delete scientific">tan</button>
+                        <button sci class="reset-delete scientific">!</button>
+                        <button sci class="reset-delete scientific">)²</button>
+                        <button sci class="reset-delete scientific">√</button>
+                        <button sci class="reset-delete scientific">log</button>
+                        <button sci class="reset-delete scientific">ln</button>
+                        <button sci class="reset-delete scientific">π</button>
+                        <button sci class="reset-delete scientific">^</button>
+                        <button reset class="reset-delete span-2">RESET</button>
+                        <button equals class="equals span-2">=</button>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="attribution">
+                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend
+                        Mentor</a>.
+                    Coded by <a href="https://www.frontendmentor.io/profile/tesla-ambassador"><img
+                            src="./images/profile@3x.png" alt="Profile" class="profile-image"></a>.
+                </p>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
