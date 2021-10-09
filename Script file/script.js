@@ -32,14 +32,14 @@ sciMode.addEventListener('click', () => {
 })
 
 // Calculator Functionality
-const numberButtons = document.querySelectorAll('[numbers]')
-const operationButtons = document.querySelectorAll('[operation]')
-const sciButtons = document.querySelectorAll('[sci]')
-const equalsButton = document.querySelector('[equals]')
-const deleteButton = document.querySelector('[delete]')
-const allClearButton = document.querySelector('[reset]')
-const previousOperandTextElement = document.querySelector('[prev-input]')
-const currentOperandTextElement = document.querySelector('[current-input]')
+const numberButtons = document.querySelectorAll('.numbers')
+const operationButtons = document.querySelectorAll('.operation')
+const sciButtons = document.querySelectorAll('.sci')
+const equalsButton = document.querySelector('.equals')
+const deleteButton = document.querySelector('.delete')
+const allClearButton = document.querySelector('.reset')
+const previousOperandTextElement = document.querySelector('.prev-input')
+const currentOperandTextElement = document.querySelector('.current-input')
 
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
@@ -58,7 +58,7 @@ class Calculator {
     }
 
     delete() {
-        this.currentOperand = this.currentOperand.toString().slice(0, -1)
+        this.currentOperand = this.currentOperand.toString().slice(0, -1) 
     }
 
     appendNumber(number) {
