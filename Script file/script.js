@@ -52,9 +52,13 @@ class Calculator {
         this.previousOperand = ''
         this.operation = undefined
     }
-    
+
+    deleteOperation() {
+        this.operation = ''
+    }
+
     delete() {
-        this.currentOperand = this.currentOperand.toString().slice(0, -1)
+        this.currentOperand = this.currentOperand.toString().slice(0, -1) 
     }
 
     appendNumber(number) {
